@@ -14,7 +14,7 @@ const Booksections = () => {
             <img
               src={bookingImg}
               className="booking-image-file"
-              alt="Bookings"
+              alt="Ticket booking illustration"
             />
           </div>
 
@@ -28,10 +28,10 @@ const Booksections = () => {
               One step away from your trip! What are you waiting for?
             </p>
 
-            <Link to="/books">
-              <div className="booking-button-wrapper">
-                <button className="booking-btn">Book Now</button>
-              </div>
+            <Link to="/books" className="booking-link">
+              <button type="button" className="booking-btn">
+                Book Now
+              </button>
             </Link>
           </div>
         </div>

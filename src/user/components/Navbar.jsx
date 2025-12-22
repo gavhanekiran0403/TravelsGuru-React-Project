@@ -5,7 +5,9 @@ import logo from "../media/Blue_Minimalist_Traveling_Logo_-removebg-preview.png"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   const closeMenu = () => setIsOpen(false);
+  const toggleMenu = () => setIsOpen((prev) => !prev);
 
   return (
     <nav className="nav-container">
@@ -14,7 +16,7 @@ function Navbar() {
         <Link to="/" className="nav-logo-link" onClick={closeMenu}>
           <img
             src={logo}
-            alt="Site Logo"
+            alt="Tours and Travel logo"
             className="nav-logo-img"
           />
         </Link>
@@ -22,10 +24,16 @@ function Navbar() {
 
       {/* Toggle Button */}
       <button
+        type="button"
         className="nav-toggle-btn"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={toggleMenu}
+        aria-label="Toggle navigation menu"
+        aria-expanded={isOpen}
       >
-        <i className={isOpen ? "fa fa-times" : "fa fa-bars"} />
+        <i
+          className={isOpen ? "fa fa-times" : "fa fa-bars"}
+          aria-hidden="true"
+        />
       </button>
 
       {/* Navigation Menu */}
