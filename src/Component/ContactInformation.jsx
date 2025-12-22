@@ -1,51 +1,22 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import "./ContactInformation.css"
-import contact from "../media/Contact.png"
+import React from "react";
+import "./ContactInformation.css";
+import contactImg from "../user/media/Contact.png";
 
+function ContactInformation() {
+  return (
+    <div className="contact-container">
+      <h2>Contact Us</h2>
 
-const ContactInformation = () => {
-    return ( <
-        >
-        <
-        div className = "contact-container" >
-        <
-        section className = "contact-section"
-        id = "contact" >
-        <
-        h1 > Get in touch with us. < /h1> <
-        div className = "contact-row" >
-        <
-        div className = "contact-image-wrapper" >
-        <
-        img src = { contact }
-        className = "contact-image"
-        alt = "Contact" / >
-        <
-        /div>
+      <img
+        src={contactImg}
+        alt="Contact"
+        style={{ width: "300px", margin: "20px auto", display: "block" }}
+      />
 
-        <
-        div className = "contact-box" >
-        <
-        h2 >
-        Contact us <
-        hr / >
-        <
-        /h2> <
-        p > Write to us and we will get back to you shortly. < /p> <
-        Link to = "/contactpage" >
-        <
-        div className = "contact-btn-wrapper" >
-        <
-        button className = "contact-button" > Contact < /button> < /
-        div > <
-        /Link> < /
-        div > <
-        /div> < /
-        section > <
-        /div> < / >
-
-    )
+      <p>Email: walunjabhikt@gmail.com</p>
+      <p>Phone: +91 7709900772</p>
+    </div>
+  );
 }
 
-export default ContactInformation
+export default ContactInformation;

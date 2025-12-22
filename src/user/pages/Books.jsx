@@ -1,7 +1,8 @@
 import React from 'react';
 import bookImg from "../media/booking.png";
 import "./Books.css";
-import BookingForm from "../Component/BookingForm";
+import BookingForm from "../../Component/BookingForm";
+
 
 const Books = () => {
     return ( <

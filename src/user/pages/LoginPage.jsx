@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./LoginPage.css";
-import BlinkLoginPage from "../Component/BlinkLoginPage"; // ⬅ import popup component
+import BlinkLoginPage from "../../Component/BlinkLoginPage";
+
 
 const LoginPage = ({ setLoggedIn }) => {
     const [formData, setFormData] = useState({ email: "", password: "" });

@@ -1,17 +1,15 @@
 /* ---------------- HOME SECTION ---------------- */
 
 .home-section {
-    height: 85vh;
+    height: 100vh;          /* Full screen */
+    padding-top: 80px;      /* Space for navbar */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
-    z-index: 1;
     overflow: hidden;
-    margin-top: 80px;
 }
-
 
 /* ---------------- HOME CONTENT ---------------- */
 
