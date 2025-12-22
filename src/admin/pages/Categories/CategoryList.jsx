@@ -4,7 +4,7 @@ import "./CategoryList.css";
 import {
   getAllCategories,
   deleteCategory,
-} from "../../../services/categoryService";
+} from "../../../services/CategoryService";
 
 function CategoryList() {
   const navigate = useNavigate();

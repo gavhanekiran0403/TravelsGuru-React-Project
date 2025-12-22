@@ -5,7 +5,7 @@ import {
   createCategory,
   getCategoryById,
   updateCategory,
-} from "../../../services/categoryService";
+} from "../../../services/CategoryService";
 
 function CategoryForm() {
   const { id } = useParams(); // category id from URL (edit mode)
