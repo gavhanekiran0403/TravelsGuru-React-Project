@@ -1,0 +1,90 @@
+/* MAIN NAVBAR */
+
+.nav-container {
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.nav-logo-img {
+    width: 150px;
+    cursor: pointer;
+}
+
+
+/* TOGGLE BUTTON */
+
+.nav-toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #92e3a9;
+    cursor: pointer;
+}
+
+
+/* NAV MENU (DESKTOP) */
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background: #92e3a9;
+    color: black;
+}
+
+
+/* ==============================
+        MOBILE DROPDOWN FROM TOP
+================================*/
+
+@media (max-width: 880px) {
+    .nav-toggle-btn {
+        display: block;
+    }
+    /* Hidden by default (height: 0) */
+    .nav-list {
+        position: absolute;
+        top: 57px;
+        left: 0;
+        background: #1b1b1b;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: height 0.4s ease;
+    }
+    /* OPEN DROPDOWN */
+    .nav-list.open {
+        height: 340px;
+        /* adjust dropdown height */
+    }
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-link {
+        display: block;
+        width: 80%;
+        font-size: 1.2rem;
+    }
+}

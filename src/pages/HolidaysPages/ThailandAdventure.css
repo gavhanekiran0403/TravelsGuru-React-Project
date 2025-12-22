@@ -1,0 +1,221 @@
+.thai-container {
+    font-family: "Poppins", sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+
+/* HERO */
+
+.thai-hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+}
+
+.thai-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.thai-hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.thai-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.thai-subtitle {
+    margin: 10px 0;
+    font-size: 1.3rem;
+}
+
+.thai-booknow-btn {
+    background: #c42020;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.thai-booknow-btn:hover {
+    background: #a80f0f;
+}
+
+
+/* Sections */
+
+.thai-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.thai-section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.gray-bg {
+    background: #f8f8f8;
+}
+
+
+/* Highlights */
+
+.thai-highlights {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+.thai-highlights li {
+    padding: 8px 0;
+}
+
+
+/* Inclusions */
+
+.thai-inclusions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.thai-include-card {
+    padding: 18px;
+    background: white;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.thai-include-card:hover {
+    background: #fff2d8;
+    transform: translateY(-5px);
+}
+
+
+/* Hotels */
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.hotel-card {
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+    text-align: center;
+}
+
+.hotel-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* Food */
+
+.food-list {
+    list-style: none;
+    max-width: 650px;
+    margin: auto;
+}
+
+.food-list li {
+    margin: 12px 0;
+    padding: 12px;
+    background: #fff4e5;
+    border-left: 5px solid #ff8d2d;
+    border-radius: 8px;
+}
+
+
+/* Gallery */
+
+.thai-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.thai-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.thai-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Details */
+
+.thai-details-text {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+
+/* Reviews */
+
+.thai-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.review-card {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+}
+
+
+/* Footer */
+
+.thai-footer {
+    padding: 25px 10%;
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thai-back-btn {
+    color: #ffb84d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.thai-back-btn:hover {
+    color: white;
+}

@@ -1,0 +1,122 @@
+.dayplan-page {
+  padding: 20px;
+  background-color: #f3f4f6;
+  min-height: calc(100vh - 60px);
+}
+
+/* TOP CONTROLS */
+.dayplan-top-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.dayplan-input {
+  padding: 8px 12px;
+  width: 220px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.add-btn {
+  background-color: #16a34a;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.add-btn:hover {
+  background-color: #15803d;
+}
+
+/* TITLE */
+.dayplan-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.dayplan-title::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 3px;
+  background-color: #2563eb;
+  margin: 8px auto 0;
+}
+
+/* TABLE */
+.table-wrapper {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.dayplan-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dayplan-table th,
+.dayplan-table td {
+  border: 1px solid #d1d5db;
+  padding: 12px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.dayplan-table thead th {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* PACKAGE CELL */
+.package-cell {
+  background-color: #f9fafb;
+  min-width: 220px;
+}
+
+.destination-name {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* DESCRIPTION */
+.desc-cell {
+  text-align: left;
+  max-width: 320px;
+}
+
+/* ACTIVITIES */
+.activity-cell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.activity-chip {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+/* NO DATA */
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}

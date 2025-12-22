@@ -1,0 +1,131 @@
+.holiday-page {
+    padding: 60px 40px;
+    background: #f8f9fa;
+    color: #333;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+}
+
+.holiday-page-title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.holiday-page-subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.holiday-section-title {
+    font-size: 1.9rem;
+    color: #222;
+    margin: 40px 0 20px;
+    border-left: 5px solid #0077b6;
+    padding-left: 10px;
+}
+
+.holiday-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 25px;
+}
+
+.holiday-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.holiday-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.holiday-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.holiday-card-content {
+    padding: 15px 18px;
+}
+
+.holiday-card-title {
+    font-size: 1.2rem;
+    color: #0077b6;
+    margin-bottom: 5px;
+}
+
+.holiday-card-duration {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.holiday-stars {
+    color: #f4c430;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.holiday-rating {
+    color: #444;
+    margin-left: 6px;
+    font-size: 0.9rem;
+}
+
+.holiday-card-features {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    color: #444;
+}
+
+.holiday-card-features li {
+    margin-bottom: 5px;
+}
+
+.holiday-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.holiday-card-price {
+    font-weight: bold;
+    color: #0077b6;
+    font-size: 1.1rem;
+}
+
+.holiday-card-btn {
+    background: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.holiday-card-btn:hover {
+    background: #0096c7;
+}
+
+@media (max-width: 768px) {
+    .holiday-page {
+        padding: 20px;
+        margin-top: 70px;
+    }
+    .holiday-page-title {
+        font-size: 2rem;
+    }
+}

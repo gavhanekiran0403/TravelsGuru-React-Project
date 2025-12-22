@@ -1,0 +1,49 @@
+.packages-container {
+    width: 98%;
+    padding: 40px 15px;
+    background-color: #f8f8f8;
+    font-family: "Urbanist", sans-serif;
+}
+
+.packages-main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.packages-subtitle {
+    font-size: 1.8rem;
+    margin: 30px 0 15px;
+    color: #333;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+/* Responsive grid */
+
+@media (max-width: 900px) {
+    .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .packages-container {
+        width: 91%;
+    }
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+    .packages-main-title {
+        font-size: 2rem;
+    }
+    .packages-subtitle {
+        font-size: 1.4rem;
+    }
+}

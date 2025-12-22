@@ -1,0 +1,223 @@
+.kerala-container {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    background: white;
+}
+
+
+/* HERO */
+
+.kerala-hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.kerala-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+.kerala-hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.kerala-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.kerala-subtitle {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.kerala-booknow-btn {
+    background: #0c7b2b;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.kerala-booknow-btn:hover {
+    background: #075e20;
+}
+
+
+/* Section Layout */
+
+.kerala-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.kerala-section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.gray-bg {
+    background: #f9f9f9;
+}
+
+
+/* Highlights */
+
+.kerala-highlights {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+.kerala-highlights li {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+
+/* INCLUSIONS */
+
+.kerala-inclusions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.kerala-include-card {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.kerala-include-card:hover {
+    background: #eaffea;
+    transform: translateY(-5px);
+}
+
+
+/* Hotels */
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.hotel-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+
+/* Food */
+
+.food-list {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+}
+
+.food-list li {
+    background: #eaffea;
+    padding: 12px;
+    margin: 12px 0;
+    border-left: 5px solid #0c7b2b;
+    border-radius: 8px;
+}
+
+
+/* Gallery */
+
+.kerala-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.kerala-gallery img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.kerala-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Details */
+
+.kerala-details-text {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.7;
+}
+
+
+/* Reviews */
+
+.kerala-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.review-card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer */
+
+.kerala-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 10%;
+    background: #0c7b2b;
+    color: white;
+}
+
+.kerala-back-btn {
+    color: #ffe9c2;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.kerala-back-btn:hover {
+    color: white;
+}

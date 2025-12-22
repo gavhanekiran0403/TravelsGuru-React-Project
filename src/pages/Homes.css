@@ -1,0 +1,185 @@
+/* ---------------- HOME SECTION ---------------- */
+
+.home-section {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+
+/* ---------------- HOME CONTENT ---------------- */
+
+.home-content {
+    position: absolute;
+    top: 20%;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 39px 17px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+.home-content h3 {
+    color: #fff;
+    text-shadow: 3px 3px rgb(199 200 205 / 37%);
+    font-size: 4rem;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.home-content p {
+    color: #fff;
+    font-family: "Urbanist", sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 2px rgb(199 200 205 / 37%);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+
+/* ---------------- BUTTON ---------------- */
+
+.home-explore-btn {
+    background-color: #92e3a9;
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.home-explore-btn:hover {
+    background-color: #37474f;
+    color: #fff;
+}
+
+
+/* ---------------- VIDEO SECTION ---------------- */
+
+.home-video-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.home-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ---------------- INFO BAR ---------------- */
+
+.home-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-family: "Urbanist", sans-serif;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-item p a,
+.info-item p {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.info-item p a:hover,
+.info-item p:hover {
+    color: #4f5bd5;
+}
+
+.info-icon {
+    color: #92e3a9;
+    font-size: 1.2rem;
+}
+
+
+/* ---------------- HIGHLIGHT ---------------- */
+
+.highlight-text {
+    color: #92e3a9;
+}
+
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media only screen and (max-width: 1024px) {
+    .home-content h3 {
+        font-size: 3rem;
+    }
+    .home-content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home-content {
+        top: 15%;
+        padding: 1.2rem 1.5rem;
+    }
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+    .home-content p {
+        font-size: 1rem;
+    }
+    .home-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .info-item {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .home-content h3 {
+        font-size: 2rem;
+    }
+    .home-content p {
+        font-size: 0.9rem;
+    }
+    .home-explore-btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 1rem;
+    }
+    .info-item p a,
+    .info-item p {
+        font-size: 0.8rem;
+    }
+}

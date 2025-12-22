@@ -1,0 +1,111 @@
+.destinations-page {
+  padding: 20px;
+  background-color: #f3f4f6;
+  min-height: calc(100vh - 60px);
+  box-sizing: border-box;
+}
+
+.top-actions-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.add-btn {
+  background-color: #16a34a;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #15803d;
+}
+
+.filter-select {
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.table-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1f2937;
+  letter-spacing: 0.5px;
+}
+
+.table-title::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 3px;
+  background-color: #2563eb;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.table-wrapper {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.destinations-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #d1d5db;
+}
+
+.destinations-table th,
+.destinations-table td {
+  border: 1px solid #d1d5db;
+  padding: 12px;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.destinations-table thead th {
+  background-color: #2563eb;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.destinations-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+.table-img {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  margin: auto;
+}
+
+.desc {
+  max-width: 250px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+  color: #6b7280;
+}

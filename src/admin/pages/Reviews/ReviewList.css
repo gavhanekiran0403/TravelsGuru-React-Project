@@ -1,0 +1,74 @@
+.review-page {
+  padding: 20px;
+  background-color: #f3f4f6;
+  min-height: calc(100vh - 60px);
+}
+
+.review-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.review-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #2563eb;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.table-wrapper {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.review-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #d1d5db;
+}
+
+.review-table th,
+.review-table td {
+  border: 1px solid #d1d5db;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.review-table thead th {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.review-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+.rating {
+  color: #f59e0b;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.comment {
+  max-width: 300px;
+  text-align: left;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}

@@ -1,0 +1,241 @@
+/* ================= GLOBAL ================= */
+
+.gujarat-container {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+
+/* ================= HERO SECTION ================= */
+
+.gujarat-hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.gujarat-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.gujarat-hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.gujarat-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.gujarat-subtitle {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.gujarat-booknow-btn {
+    background: #e25c1a;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gujarat-booknow-btn:hover {
+    background: #bb420a;
+}
+
+
+/* ================= SECTIONS ================= */
+
+.gujarat-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.gujarat-section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.gray-bg {
+    background: #f7f7f7;
+}
+
+
+/* ================= HIGHLIGHTS ================= */
+
+.gujarat-highlights {
+    list-style: none;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.gujarat-highlights li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+
+/* ================= INCLUSIONS GRID ================= */
+
+.gujarat-inclusions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.gujarat-include-card {
+    padding: 18px;
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.gujarat-include-card:hover {
+    background: #fff4e5;
+    transform: translateY(-5px);
+}
+
+
+/* ================= HOTEL GRID ================= */
+
+.gujarat-hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.gujarat-hotel-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gujarat-hotel-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.gujarat-hotel-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #e25c1a;
+}
+
+
+/* ================= FOOD SECTION ================= */
+
+.gujarat-food-list {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+}
+
+.gujarat-food-list li {
+    background: #fff4e5;
+    margin: 12px 0;
+    padding: 12px;
+    border-left: 5px solid #e25c1a;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+
+/* ================= GALLERY ================= */
+
+.gujarat-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.gujarat-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.gujarat-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* ================= DETAILS TEXT ================= */
+
+.gujarat-details-text {
+    font-size: 1.1rem;
+    max-width: 850px;
+    margin: 15px auto;
+    line-height: 1.7;
+    color: #444;
+}
+
+
+/* ================= REVIEWS ================= */
+
+.gujarat-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.gujarat-review-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gujarat-review-card p {
+    margin: 8px 0;
+}
+
+
+/* ================= FOOTER ================= */
+
+.gujarat-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    background: #222;
+}
+
+.gujarat-back-btn {
+    color: #ffb84d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.gujarat-back-btn:hover {
+    color: white;
+}

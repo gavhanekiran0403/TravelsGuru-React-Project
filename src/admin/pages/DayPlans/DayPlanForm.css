@@ -1,0 +1,206 @@
+/* ================= PAGE ================= */
+.dayplan-form-page {
+  padding: 20px;
+  background-color: #f3f4f6;
+  min-height: calc(100vh - 60px);
+}
+
+/* ================= TITLE ================= */
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.form-title::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 3px;
+  background-color: #2563eb;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* ================= FORM CARD ================= */
+.dayplan-form {
+  max-width: 650px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= FORM GROUP ================= */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* ================= DAY BOX ================= */
+.day-box {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 18px;
+  background-color: #f9fafb;
+}
+
+/* ================= DAY HEADER ================= */
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.day-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* ================= REMOVE DAY ================= */
+.remove-day-btn {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.remove-day-btn:hover {
+  background-color: #dc2626;
+}
+
+/* ================= ACTIVITY SELECT ================= */
+.activity-select-row {
+  display: flex;
+  gap: 10px;
+}
+
+.activity-select-row select {
+  flex: 1;
+}
+
+/* ADD ACTIVITY BUTTON */
+.add-activity-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.add-activity-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* ================= SELECTED ACTIVITIES ================= */
+.selected-activities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.activity-chip {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 6px 10px;
+  border-radius: 16px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.remove-chip {
+  cursor: pointer;
+  font-weight: bold;
+  color: #dc2626;
+}
+
+/* ================= ADD DAY ================= */
+.add-day-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #16a34a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.add-day-btn:hover {
+  background-color: #15803d;
+}
+
+/* ================= ACTION BUTTONS ================= */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+/* SAVE */
+.save-btn {
+  background-color: #16a34a;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.save-btn:hover {
+  background-color: #15803d;
+}
+
+/* CANCEL */
+.cancel-btn {
+  background-color: #6b7280;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cancel-btn:hover {
+  background-color: #4b5563;
+}

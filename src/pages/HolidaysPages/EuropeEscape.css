@@ -1,0 +1,231 @@
+.europe-container {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+
+/* HERO SECTION */
+
+.europe-hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.europe-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+.europe-hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.europe-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.europe-subtitle {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.europe-booknow-btn {
+    background: #c42020;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.europe-booknow-btn:hover {
+    background: #a00f0f;
+}
+
+
+/* SECTIONS */
+
+.europe-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.europe-section-title {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.gray-bg {
+    background-color: #f7f7f7;
+}
+
+
+/* HIGHLIGHTS */
+
+.europe-highlights {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+.europe-highlights li {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+
+/* INCLUSIONS */
+
+.europe-inclusions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.europe-include-card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.europe-include-card:hover {
+    background: #fff2d6;
+    transform: translateY(-5px);
+}
+
+
+/* HOTELS */
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.hotel-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.hotel-card h3 {
+    font-size: 1.3rem;
+    color: #e9930f;
+}
+
+
+/* FOOD */
+
+.food-list {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+}
+
+.food-list li {
+    background: #fff4e5;
+    margin: 12px 0;
+    padding: 12px;
+    border-left: 5px solid #ff9d23;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+
+/* GALLERY */
+
+.europe-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.europe-gallery img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.europe-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* ABOUT TEXT */
+
+.europe-details-text {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.7;
+    color: #444;
+}
+
+
+/* REVIEWS */
+
+.europe-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.review-card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* FOOTER */
+
+.europe-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 10%;
+    background: #222;
+}
+
+.europe-back-btn {
+    color: #ffb84d;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.europe-back-btn:hover {
+    color: white;
+}

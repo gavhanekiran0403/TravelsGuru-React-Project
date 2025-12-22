@@ -1,0 +1,79 @@
+.package-card {
+    width: 100%;
+    background: #fff;
+    color: hsl(229, 23%, 23%);
+    font-family: "Urbanist", sans-serif;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.25);
+}
+
+.package-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.package-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.package-img:hover {
+    transform: scale(1.2);
+}
+
+.package-content {
+    padding: 1rem 1.2rem;
+}
+
+.package-name {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.package-name i {
+    color: #92e3a9;
+    margin-right: 5px;
+}
+
+.package-description {
+    font-size: 0.9rem;
+    color: hsl(225, 10%, 46%);
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.package-price {
+    font-weight: 700;
+    color: #27ae60;
+    margin-bottom: 0.8rem;
+}
+
+.package-button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #92e3a9;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.package-button:hover {
+    background-color: #37474f;
+    color: #fff;
+    font-weight: 500;
+}

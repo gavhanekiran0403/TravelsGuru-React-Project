@@ -1,0 +1,153 @@
+.travel-booking-form {
+    width: 35%;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+    font-family: "Poppins", sans-serif;
+}
+
+.input-box {
+    margin: 1.1rem 0;
+}
+
+.input-box label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: .3rem;
+}
+
+.input-box input,
+.input-box select {
+    width: 100%;
+    padding: .8rem;
+    border-radius: 8px;
+    border: 1px solid #888;
+    outline: none;
+    transition: .3s;
+}
+
+.input-box input:focus,
+.input-box select:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 6px rgba(0, 118, 175, 0.4);
+}
+
+
+/* NEW BUTTON STYLE */
+
+.destination-btn-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.dest-btn {
+    width: 48%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #0077b6;
+    color: white;
+    font-size: 0.95rem;
+    transition: 0.25s;
+}
+
+.dest-btn:hover {
+    background: #024261;
+}
+
+.side-by-side {
+    display: flex;
+    gap: 8%;
+}
+
+.booking-submit-btn {
+    width: 100%;
+    margin-top: 1.4rem;
+    padding: 1rem;
+    background: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.booking-submit-btn:hover {
+    background: #023e55;
+}
+
+@media(max-width: 750px) {
+    .travel-booking-form {
+        width: 90%;
+    }
+    .side-by-side {
+        flex-direction: column;
+    }
+}
+
+
+/* POPUP STYLES */
+
+..popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-box {
+    background: #ffffff;
+    width: 420px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    animation: popupShow 0.3s ease-in-out;
+}
+
+.popup-box h2 {
+    margin-bottom: 8px;
+    color: #0077b6;
+    font-weight: 700;
+}
+
+.popup-box p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.close-popup {
+    background: #0077b6;
+    color: #fff;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-popup:hover {
+    background: #024261;
+}
+
+@keyframes popupShow {
+    from {
+        transform: scale(0.8);
+        opacity: 0.4;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,85 @@
+.enquiry-page {
+  padding: 20px;
+  background-color: #f3f4f6;
+  min-height: calc(100vh - 60px);
+}
+
+/* TOP SEARCH */
+.enquiry-top-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.enquiry-top-controls input {
+  padding: 8px 12px;
+  width: 260px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+/* TITLE */
+.enquiry-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.enquiry-title::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 3px;
+  background-color: #2563eb;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* TABLE */
+.table-wrapper {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.enquiry-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #d1d5db;
+}
+
+.enquiry-table th,
+.enquiry-table td {
+  border: 1px solid #d1d5db;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.enquiry-table thead th {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.enquiry-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* DESCRIPTION CELL */
+.desc-cell {
+  text-align: left;
+  max-width: 300px;
+  white-space: normal;
+}
+
+/* NO DATA */
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}

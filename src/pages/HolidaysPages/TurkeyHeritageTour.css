@@ -1,0 +1,241 @@
+/* =============== MAIN CONTAINER =============== */
+
+.turkey-container {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+
+/* =============== HERO SECTION =============== */
+
+.turkey-hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.turkey-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+.turkey-hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.turkey-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.turkey-subtitle {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.turkey-booknow-btn {
+    background: #b91c1c;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.turkey-booknow-btn:hover {
+    background: #8a1111;
+}
+
+
+/* =============== SECTIONS =============== */
+
+.turkey-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.turkey-section-title {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.gray-bg {
+    background-color: #f9f9f9;
+}
+
+
+/* =============== HIGHLIGHTS =============== */
+
+.turkey-highlights {
+    list-style: none;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+.turkey-highlights li {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+
+/* =============== INCLUSIONS GRID =============== */
+
+.turkey-inclusions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.turkey-include-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.turkey-include-card:hover {
+    background: #fff2d6;
+    transform: translateY(-5px);
+}
+
+
+/* =============== HOTEL DETAILS =============== */
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.hotel-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.hotel-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #d97706;
+}
+
+
+/* =============== FOOD LIST =============== */
+
+.food-list {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+}
+
+.food-list li {
+    background: #fff4e5;
+    margin: 12px 0;
+    padding: 12px;
+    border-left: 5px solid #f59e0b;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+
+/* =============== GALLERY =============== */
+
+.turkey-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.turkey-gallery img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.turkey-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* =============== ABOUT TEXT =============== */
+
+.turkey-details-text {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.7;
+    color: #444;
+}
+
+
+/* =============== REVIEWS =============== */
+
+.turkey-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.review-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+    margin: 8px 0;
+}
+
+
+/* =============== FOOTER =============== */
+
+.turkey-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    background: #222;
+}
+
+.turkey-back-btn {
+    color: #fbbf24;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.turkey-back-btn:hover {
+    color: white;
+}

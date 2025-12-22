@@ -1,0 +1,52 @@
+.sidebar {
+  width: 230px;
+  height: 100vh;              /* full viewport height */
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 15px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Logo stays at top */
+.logo {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #60a5fa;
+  flex-shrink: 0;
+}
+
+/* Menu takes remaining space */
+.menu {
+  font-size: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;                    /* fills remaining height */
+  overflow-y: auto;        /* scroll if too many items */
+  align-items: center;
+}
+
+/* Menu items */
+.menu li {
+  margin-bottom: 6px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 6px;
+  text-align: center;
+  transition: background 0.2s ease;
+}
+
+.menu li a:hover {
+  background-color: #374151;
+}
+
+/* Active link */
+.menu li a.active {
+  background-color: #2563eb;
+}

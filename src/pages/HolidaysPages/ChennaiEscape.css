@@ -1,0 +1,223 @@
+.ce-container {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    background: white;
+}
+
+
+/* HERO */
+
+.ce-hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.ce-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+.ce-hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.ce-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.ce-subtitle {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.ce-book-btn {
+    background: #c42020;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ce-book-btn:hover {
+    background: #a00f0f;
+}
+
+
+/* Section */
+
+.ce-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.gray-bg {
+    background: #f9f9f9;
+}
+
+.ce-section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+/* Highlights */
+
+.ce-highlights {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+.ce-highlights li {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+
+/* Inclusions */
+
+.ce-inclusions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.ce-include-card {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.ce-include-card:hover {
+    background: #fff4e5;
+    transform: translateY(-5px);
+}
+
+
+/* Hotels */
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.hotel-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+
+/* Food */
+
+.food-list {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+}
+
+.food-list li {
+    background: #fff4e5;
+    padding: 12px;
+    margin: 12px 0;
+    border-left: 5px solid #ff7b00;
+    border-radius: 8px;
+}
+
+
+/* Gallery */
+
+.ce-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.ce-gallery img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.ce-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Details */
+
+.ce-details-text {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.7;
+}
+
+
+/* Reviews */
+
+.ce-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.review-card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer */
+
+.ce-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 10%;
+    background: #222;
+    color: white;
+}
+
+.ce-back-btn {
+    color: #ffb84d;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.ce-back-btn:hover {
+    color: white;
+}

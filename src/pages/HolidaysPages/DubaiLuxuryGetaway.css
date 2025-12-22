@@ -1,0 +1,262 @@
+.dubai-container {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+
+/* Hero Section */
+
+.dubai-hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.dubai-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+.dubai-hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.dubai-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.dubai-subtitle {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.dubai-booknow-btn {
+    background: #c42020;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dubai-booknow-btn:hover {
+    background: #a00f0f;
+}
+
+
+/* Section Layout */
+
+.dubai-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.dubai-section-title {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.gray-bg {
+    background-color: #f9f9f9;
+}
+
+
+/* Highlights */
+
+.dubai-highlights {
+    list-style: none;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+.dubai-highlights li {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+
+/* Inclusions */
+
+.dubai-inclusions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.dubai-include-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.dubai-include-card:hover {
+    background: #fff4e5;
+    transform: translateY(-5px);
+}
+
+
+/* Gallery */
+
+.dubai-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.dubai-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.dubai-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Details */
+
+.dubai-details-text {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.7;
+    color: #444;
+}
+
+
+/* Reviews */
+
+.dubai-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.review-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+    margin: 8px 0;
+}
+
+
+/* Footer */
+
+.dubai-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    background: #222;
+}
+
+.dubai-back-btn {
+    color: #ffb84d;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.dubai-back-btn:hover {
+    color: white;
+}
+
+
+/* ================= HOTEL SECTION ================= */
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.hotel-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.hotel-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #ff7b00;
+}
+
+
+/* ================= FOOD SECTION ================= */
+
+.food-list {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+}
+
+.food-list li {
+    background: #fff4e5;
+    margin: 12px 0;
+    padding: 12px;
+    border-left: 5px solid #ff7b00;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+
+/* ================= INCLUSION GRID (8 ITEMS) ================= */
+
+.dubai-inclusions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.dubai-include-card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+
+.dubai-include-card:hover {
+    background: #fff2d8;
+    transform: translateY(-5px);
+}

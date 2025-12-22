@@ -1,0 +1,203 @@
+.goa-container {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+
+/* HERO */
+
+.goa-hero {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.goa-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.goa-hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.goa-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.goa-subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.goa-booknow-btn {
+    background: #ff7b00;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.goa-booknow-btn:hover {
+    background: #d66a00;
+}
+
+
+/* SECTIONS */
+
+.goa-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.goa-section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.gray-bg {
+    background: #f9f9f9;
+}
+
+
+/* Highlights */
+
+.goa-highlights li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    list-style: none;
+}
+
+
+/* Inclusions */
+
+.goa-inclusions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.goa-include-card {
+    background: white;
+    padding: 18px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.goa-include-card:hover {
+    transform: translateY(-4px);
+    background: #fff2d8;
+}
+
+
+/* Hotel Section */
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.hotel-card {
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hotel-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+
+/* Food List */
+
+.food-list li {
+    list-style: none;
+    background: #fff4e5;
+    margin: 12px 0;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-left: 5px solid #ff7b00;
+    border-radius: 8px;
+}
+
+
+/* Gallery */
+
+.goa-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.goa-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.goa-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Reviews */
+
+.goa-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.review-card {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer */
+
+.goa-footer {
+    padding: 25px 10%;
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.goa-back-btn {
+    color: #ffb84d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.goa-back-btn:hover {
+    color: white;
+}
