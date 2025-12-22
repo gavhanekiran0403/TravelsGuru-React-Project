@@ -1,6 +1,6 @@
 import React from 'react';
 import "./ContactPage.css";
-import DisForm from "../../Component/DisForm";
+import DisForm from "../components/DisForm";
 
 import contactbg from "../media/contactus.png";
 

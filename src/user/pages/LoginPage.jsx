@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./LoginPage.css";
-import BlinkLoginPage from "../../Component/BlinkLoginPage";
+import BlinkLoginPage from "../components/BlinkLoginPage";
 
 
 const LoginPage = ({ setLoggedIn }) => {

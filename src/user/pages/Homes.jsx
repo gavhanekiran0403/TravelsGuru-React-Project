@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Booksections from "../../Component/Booksections";
-import Packages from "../../Component/Packages";
-import ContactInformation from "../../Component/ContactInformation";
+import Booksections from "../components/Booksections";
+import Packages from "../components/Packages";
+import ContactInformation from "../components/ContactInformation";
 
 import "./Homes.css";
 

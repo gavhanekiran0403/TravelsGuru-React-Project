@@ -2,14 +2,14 @@ import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 /* shared user components */
-import Navbar from "../Component/Navbar";
-import Packages from "../Component/Packages";
-import PackagesCards from "../Component/PackagesCards";
-import ContactInformation from "../Component/ContactInformation";
-import DisForm from "../Component/DisForm";
-import BookingForm from "../Component/BookingForm";
-import BlinkLoginPage from "../Component/BlinkLoginPage";
-import Footers from "../Component/Footers";
+import Navbar from "./components/Navbar";
+import Packages from "./components/Packages";
+import PackagesCards from "./components/PackagesCards";
+import ContactInformation from "./components/ContactInformation";
+import DisForm from "./components/DisForm";
+import BookingForm from "./components/BookingForm";
+import BlinkLoginPage from "./components/BlinkLoginPage";
+import Footers from "./components/Footers";
 
 /* user pages */
 import Home from "./pages/Homes";

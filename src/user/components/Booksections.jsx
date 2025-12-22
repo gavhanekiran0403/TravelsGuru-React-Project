@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bookingImg from "../user/media/booking.png";
+import bookingImg from "../media/booking.png";
 import "./Booksection.css";
 
 const Booksections = () => {

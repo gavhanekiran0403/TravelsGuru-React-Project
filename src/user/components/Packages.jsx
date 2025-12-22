@@ -4,14 +4,14 @@ import PackagesCards from "./PackagesCards";
 import "./Packages.css";
 
 /* ✅ Correct media imports */
-import Kashmir from "../user/media/jammu/jkbg.jpg";
-import goa from "../user/media/goa/goabg.jpg";
-import kerala from "../user/media/kerala/keralabg.jpg";
-import rajasthan from "../user/media/rajasthan/rajbg.jpg";
-import dubai from "../user/media/dubai/dubaibg.jpg";
-import europe from "../user/media/europe/europebg.jpg";
-import thailand from "../user/media/thailand/thailandbg.jpg"; // if exists
-import maldives from "../user/media/maldives/maldivesbg.jpg";
+import Kashmir from "../media/jammu/jkbg.jpg";
+import goa from "../media/goa/goabg.jpg";
+import kerala from "../media/kerala/keralabg.jpg";
+import rajasthan from "../media/rajasthan/rajbg.jpg";
+import dubai from "../media/dubai/dubaibg.jpg";
+import europe from "../media/europe/europebg.jpg";
+import thailand from "../media/thailand/thailandbg.jpg"; // if exists
+import maldives from "../media/maldives/maldivesbg.jpg";
 
 const Packages = () => {
   const navigate = useNavigate();
