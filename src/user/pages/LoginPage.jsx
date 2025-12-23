@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import loginApi from "../../services/LoginService";
+import { loginUser } from "../../services/LoginService";
 import "./LoginPage.css";
 import BlinkLoginPage from "../components/BlinkLoginPage";
 
-
-const LoginPage = ({ setLoggedIn }) => {
+const LoginPage = () => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -27,27 +26,32 @@ const LoginPage = ({ setLoggedIn }) => {
     setError("");
 
     try {
-      const response = await loginApi.post("/login", formData);
+      // 🔹 API call
+      const response = await loginUser(formData);
 
-      const { role, userId } = response.data;
+      console.log("LOGIN RESPONSE:", response.data); // 🔍 DEBUG
 
-      // Save login info (optional)
+      // 🔹 Adjust this if backend wraps data differently
+      const { userId, role } = response.data;
+
+      if (!userId || !role) {
+        throw new Error("Invalid login response");
+      }
+
+      // 🔹 Save login info (PERSISTENT)
       localStorage.setItem("userId", userId);
       localStorage.setItem("role", role);
+      localStorage.setItem("isLoggedIn", "true");
 
-      setLoggedIn(true);
-
-      // 🔀 Role-based redirect
+      // 🔹 Role-based redirect
       if (role === "ADMIN") {
         navigate("/admin/dashboard", { replace: true });
       } else {
-        navigate("/", { replace: true });
+        navigate("/", { replace: true }); // or "/dashboard" if you have one
       }
-
     } catch (err) {
-      setError(
-        err.response?.data?.message || "Invalid email or password"
-      );
+      console.error("LOGIN ERROR:", err);
+      setError("Invalid email or password");
     }
   };
 
@@ -63,26 +67,44 @@ const LoginPage = ({ setLoggedIn }) => {
           {error && <p className="error-text">{error}</p>}
 
           <form onSubmit={handleSubmit} className="login-form">
+            {/* Email */}
             <div className="input-group">
-              <label>Email</label>
+              <label htmlFor="email">Email</label>
               <input
+                id="email"
                 type="email"
                 name="email"
+                placeholder="Enter your email"
                 value={formData.email}
                 onChange={handleChange}
                 required
               />
             </div>
 
+            {/* Password */}
             <div className="input-group">
-              <label>Password</label>
+              <label htmlFor="password">Password</label>
               <input
+                id="password"
                 type="password"
                 name="password"
+                placeholder="Enter your password"
                 value={formData.password}
                 onChange={handleChange}
                 required
               />
+            </div>
+
+            {/* Options */}
+            <div className="options">
+              <label htmlFor="rememberMe">
+                <input id="rememberMe" type="checkbox" />
+                Remember Me
+              </label>
+
+              <a href="/" className="forgot-link">
+                Forgot Password?
+              </a>
             </div>
 
             <button type="submit" className="login-btn">
@@ -90,7 +112,8 @@ const LoginPage = ({ setLoggedIn }) => {
             </button>
 
             <p className="signup-text">
-              Don’t have an account? <a href="/signuppage">Sign up</a>
+              Don’t have an account?{" "}
+              <a href="/signuppage">Sign up</a>
             </p>
           </form>
         </div>

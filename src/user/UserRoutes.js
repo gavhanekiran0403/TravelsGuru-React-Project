@@ -1,17 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import UserLayout from "./layouts/UserLayout";
 
-/* shared user components */
-import Navbar from "./components/Navbar";
-import Packages from "./components/Packages";
-import PackagesCards from "./components/PackagesCards";
-import ContactInformation from "./components/ContactInformation";
-import DisForm from "./components/DisForm";
-import BookingForm from "./components/BookingForm";
-import BlinkLoginPage from "./components/BlinkLoginPage";
-import Footers from "./components/Footers";
-
-/* user pages */
+/* User pages */
 import Home from "./pages/Homes";
 import Books from "./pages/Books";
 import HolidayPackages from "./pages/HolidayPackages";
@@ -19,7 +9,7 @@ import ContactPage from "./pages/ContactPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 
-/* holiday detail pages */
+/* Holiday detail pages */
 import DubaiLuxuryGetaway from "./pages/HolidaysPages/DubaiLuxuryGetaway";
 import RussiaDelight from "./pages/HolidaysPages/RussiaDelight";
 import EuropeEscape from "./pages/HolidaysPages/EuropeEscape";
@@ -38,20 +28,16 @@ import GujaratEscape from "./pages/HolidaysPages/GujaratEscape";
 import UttarakhandAdventure from "./pages/HolidaysPages/UttarakhandAdventure";
 
 function UserRoutes() {
-  const [loggedIn, setLoggedIn] = useState(false);
-
   return (
-    <div className="Apps">
-      {/* Navbar always visible */}
-      <Navbar />
-
-      <Routes>
-        {/* Home & main pages */}
-        <Route path="/" element={<Home />} />
+    <Routes>
+      {/* USER LAYOUT */}
+      <Route element={<UserLayout />}>
+        <Route index element={<Home />} />
         <Route path="books" element={<Books />} />
         <Route path="holidaypackages" element={<HolidayPackages />} />
+        <Route path="contactpage" element={<ContactPage />} />
 
-        {/* Holiday detail pages */}
+        {/* Holiday pages */}
         <Route path="dubai-luxury-getaway" element={<DubaiLuxuryGetaway />} />
         <Route path="russia-delight" element={<RussiaDelight />} />
         <Route path="europe-escape" element={<EuropeEscape />} />
@@ -62,46 +48,18 @@ function UserRoutes() {
         <Route path="australia-highlights" element={<AustraliaHighlights />} />
         <Route path="goa-beach-fun" element={<GoaBeachFun />} />
         <Route path="chennai-escape" element={<ChennaiEscape />} />
-        <Route
-          path="kerala-backwater-retreat"
-          element={<KeralaBackwaterRetreat />}
-        />
+        <Route path="kerala-backwater-retreat" element={<KeralaBackwaterRetreat />} />
         <Route path="kashmir-heaven-tour" element={<KashmirHeavenTour />} />
-        <Route
-          path="rajasthan-royal-heritage"
-          element={<RajasthanRoyalHeritage />}
-        />
+        <Route path="rajasthan-royal-heritage" element={<RajasthanRoyalHeritage />} />
         <Route path="delhi-bliss" element={<DelhiBliss />} />
         <Route path="gujarat-escape" element={<GujaratEscape />} />
         <Route path="uttarakhand-adventure" element={<UttarakhandAdventure />} />
 
-        {/* Components as pages */}
-        <Route path="packages" element={<Packages />} />
-        <Route path="packagescards" element={<PackagesCards />} />
-        <Route
-          path="contactinformation"
-          element={<ContactInformation />}
-        />
-        <Route path="contactpage" element={<ContactPage />} />
-        <Route path="disform" element={<DisForm />} />
-        <Route path="bookingform" element={<BookingForm />} />
-
-        {/* Login / Signup */}
-        <Route
-          path="loginpage"
-          element={
-            <>
-              <BlinkLoginPage loggedIn={loggedIn} />
-              <LoginPage setLoggedIn={setLoggedIn} />
-            </>
-          }
-        />
+        {/* Auth */}
+        <Route path="loginpage" element={<LoginPage />} />
         <Route path="signuppage" element={<SignupPage />} />
-      </Routes>
-
-      {/* Footer always visible */}
-      <Footers />
-    </div>
+      </Route>
+    </Routes>
   );
 }
 

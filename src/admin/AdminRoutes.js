@@ -1,17 +1,14 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
-import "../App.css";
+import AdminLayout from "./layouts/AdminLayout";
 
-import Sidebar from "./components/Sidebar/Sidebar";
-import Navbar from "./components/Navbar/Navbar";
-
+/* Admin pages */
 import Dashboard from "./pages/Dashboard/Dashboard";
 import DestinationList from "./pages/Destinations/DestinationList";
 import DestinationForm from "./pages/Destinations/DestinationForm";
-import CategoryForm from "./pages/Categories/CategoryForm";
 import CategoryList from "./pages/Categories/CategoryList";
-import TravelPackageForm from "./pages/TravelPackages/TravelPackageForm";
+import CategoryForm from "./pages/Categories/CategoryForm";
 import TravelPackageList from "./pages/TravelPackages/TravelPackageList";
+import TravelPackageForm from "./pages/TravelPackages/TravelPackageForm";
 import UserList from "./pages/Users/UserList";
 import BookingList from "./pages/Bookings/BookingList";
 import ReviewList from "./pages/Reviews/ReviewList";
@@ -29,49 +26,44 @@ import DayPlanForm from "./pages/DayPlans/DayPlanForm";
 
 function AdminRoutes() {
   return (
-    <div className="app-layout">
-      <Sidebar />
+    <Routes>
+      {/* ADMIN LAYOUT */}
+      <Route element={<AdminLayout />}>
+        <Route index element={<Dashboard />} />
+        <Route path="dashboard" element={<Dashboard />} />
 
-      <div className="page-content">
-        <Navbar />
+        <Route path="destinations" element={<DestinationList />} />
+        <Route path="destinations/add" element={<DestinationForm />} />
 
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="dashboard" element={<Dashboard />} />
+        <Route path="categories" element={<CategoryList />} />
+        <Route path="categories/add" element={<CategoryForm />} />
+        <Route path="categories/edit/:id" element={<CategoryForm />} />
 
-          <Route path="destinations" element={<DestinationList />} />
-          <Route path="destinations/add" element={<DestinationForm />} />
+        <Route path="packages" element={<TravelPackageList />} />
+        <Route path="packages/add" element={<TravelPackageForm />} />
 
-          <Route path="categories" element={<CategoryList />} />
-          <Route path="categories/add" element={<CategoryForm />} />
-          <Route path="categories/edit/:id" element={<CategoryForm />} />
+        <Route path="users" element={<UserList />} />
+        <Route path="bookings" element={<BookingList />} />
+        <Route path="reviews" element={<ReviewList />} />
 
-          <Route path="packages" element={<TravelPackageList />} />
-          <Route path="packages/add" element={<TravelPackageForm />} />
+        <Route path="payments" element={<PaymentList />} />
+        <Route path="payment-reports" element={<PaymentReport />} />
 
-          <Route path="users" element={<UserList />} />
-          <Route path="bookings" element={<BookingList />} />
-          <Route path="reviews" element={<ReviewList />} />
+        <Route path="hotels" element={<HotelList />} />
+        <Route path="hotels/add" element={<HotelForm />} />
 
-          <Route path="payments" element={<PaymentList />} />
-          <Route path="payment-reports" element={<PaymentReport />} />
+        <Route path="cities" element={<CityList />} />
+        <Route path="cities/add" element={<CityForm />} />
 
-          <Route path="hotels" element={<HotelList />} />
-          <Route path="hotels/add" element={<HotelForm />} />
+        <Route path="activities" element={<ActivityList />} />
+        <Route path="activities/add" element={<ActivityForm />} />
 
-          <Route path="cities" element={<CityList />} />
-          <Route path="cities/add" element={<CityForm />} />
+        <Route path="contact-enquiries" element={<ContactEnquiryList />} />
 
-          <Route path="activities" element={<ActivityList />} />
-          <Route path="activities/add" element={<ActivityForm />} />
-
-          <Route path="contact-enquiries" element={<ContactEnquiryList />} />
-
-          <Route path="day-plans" element={<DayPlanList />} />
-          <Route path="day-plans/add" element={<DayPlanForm />} />
-        </Routes>
-      </div>
-    </div>
+        <Route path="day-plans" element={<DayPlanList />} />
+        <Route path="day-plans/add" element={<DayPlanForm />} />
+      </Route>
+    </Routes>
   );
 }
 
